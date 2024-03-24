@@ -38,7 +38,34 @@ import "fmt"
 */
 
 func main() {
-	var number int32 = 3000
+	// Hello world
 	fmt.Println("Hello world from go")
-	fmt.Println(number)
+
+	// explicit declaration
+	var number int32 = 3000
+	fmt.Println(number, "explicit using var")
+
+	// implicit declaration
+	var number2 = 3000
+	fmt.Println(number2, "implicit using var")
+
+	// Variables cannot be declared without var keyword,
+	// but it can be don3 with walrus operator to do implicit declaration
+	number3 := 3000
+	fmt.Println(number3, "implicit using walrus operator")
+
+	// The below can be done:
+
+	/* var number int64 = 3000
+	   var number = 3000
+	   var number = int64(2000)
+	   number := 3000
+	   number := int64(3000)
+	*/
+
+	// The below cannot be done:
+
+	/* var number := 3000 [We cannot use var and the walrus operator in a same declaration],
+	   number = 3000 [We cannot declare a variable without var keyword, in this case
+	                 we have to use walrus operator [:=] to declare variables without var keyword] */
 }
