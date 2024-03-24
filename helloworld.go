@@ -41,6 +41,8 @@ func main() {
 	// Hello world
 	fmt.Println("Hello world from go")
 
+	// Variable declartions:
+
 	// explicit declaration
 	var number int32 = 3000
 	fmt.Println(number, "explicit using var")
